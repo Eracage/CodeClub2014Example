@@ -55,8 +55,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		Ball pallo;
 
 		// Sijoitetaan pallo satunnaiselle sijainnille x/y koordinaateilla
-		pallo.position.x = randomRange(0, 400);
-		pallo.position.y = randomRange(0, 400);
+		pallo.position.x = randomRange(0, 500);
+		pallo.position.y = randomRange(0, 500);
 
 		// annetaan pallolle satunnainen nopeus pallon nopeuden pohjalta
 		pallo.velocity.x = randomRange(-ballSpeed, ballSpeed);
