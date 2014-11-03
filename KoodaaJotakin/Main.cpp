@@ -55,8 +55,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		Ball pallo;
 
 		// Sijoitetaan pallo satunnaiselle sijainnille x/y koordinaateilla
-		pallo.position.x = randomRange(0, 200);
-		pallo.position.y = randomRange(0, 200);
+		pallo.position.x = randomRange(0, 400);
+		pallo.position.y = randomRange(0, 400);
 
 		// annetaan pallolle satunnainen nopeus pallon nopeuden pohjalta
 		pallo.velocity.x = randomRange(-ballSpeed, ballSpeed);
@@ -77,12 +77,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// -> liikkumisessa on bugi! koita korjata se
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 		{
-			playerPosition.y -= playerSpeed * 1.2f;
+			playerPosition.y -= playerSpeed * 2.f;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 		{
-			playerPosition.y += playerSpeed * 1.2f;
+			playerPosition.y += playerSpeed * 2.f;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
