@@ -75,24 +75,24 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// Pelaajan liikkuminen 
 
 		// -> liikkumisessa on bugi! koita korjata se
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 		{
 			playerPosition.y -= playerSpeed;
 		}
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 		{
 			playerPosition.y += playerSpeed;
-		}
-
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-		{
-			playerPosition.x -= playerSpeed;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 		{
 			playerPosition.x -= playerSpeed;
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+		{
+			playerPosition.x += playerSpeed;
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
